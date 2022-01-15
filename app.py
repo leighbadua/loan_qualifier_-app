@@ -114,7 +114,7 @@ def save_qualifying_loans(qualifying_loans):
 
     # Ask user if wants to save qualifying loans to CSV file. 
     save_csv = questionary.confirm("Do you want to save your list of qualifying loans?").ask()
-    output_path = questionary.text("Enter file name to save as CSV").ask()
+    output_path = questionary.text("Enter file name to save as CSV (.csv)").ask()
 
     if output_path == "": # If user misuse function, returns user.
         return
