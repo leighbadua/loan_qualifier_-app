@@ -1,1 +1,3 @@
 # loan_qualifier_-app
+
+This is an application to determine which loans the user qualifies for. The application runs the user information through loan criteria defined by its lenders found in the 'daily_rate_sheet.csv'. When the user uses the application, they are expected to answer a few questions for eligibility. If eligible, the application will return a list of qualifying loans and it allows for the user to save them to a CSV file so they can share the results as a spreadsheet. 
