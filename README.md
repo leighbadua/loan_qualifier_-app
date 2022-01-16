@@ -30,12 +30,12 @@ When asked to "Enter a file path to a rate-sheet (.csv):", enter the following:
 ./data/daily_rate_sheet.csv
 ```
 User will answer the eligibility questions. 
-If user matches criteria, it will ask the user if they would like to save as a CSV file. 
+The user will be asked if they would like to save the list. 
 They can enter text to name file, followed by ".csv" to set it as a CSV file. 
-    ![Terminal Confirmation](./Projects/terminal_prompt.jpg) 
+![Terminal Confirmation](terminal_prompt.jpg) 
 
 CSV file example:
-    ![CSV Example](./Projects/qualifyingloans.jpg)
+![CSV Example](qualifyingloans.jpg)
 
 ---
 
