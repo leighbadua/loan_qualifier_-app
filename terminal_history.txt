@@ -1,4 +1,3 @@
-   17  export CONDA_PYTHON_EXE='C:/Users/labad/anaconda3\python.exe'
    18  # Copyright (C) 2012 Anaconda, Inc
    19  # SPDX-License-Identifier: BSD-3-Clause
    20  __add_sys_prefix_to_path() {     if [ -n "${_CE_CONDA}" ] && [ -n "${WINDIR+x}" ]; then         SYSP=$(\dirname "${CONDA_EXE}");     else         SYSP=$(\dirname "${CONDA_EXE}");         SYSP=$(\dirname "${SYSP}");     fi;      if [ -n "${WINDIR+x}" ]; then         PATH="${SYSP}/bin:${PATH}";         PATH="${SYSP}/Scripts:${PATH}";         PATH="${SYSP}/Library/bin:${PATH}";         PATH="${SYSP}/Library/usr/bin:${PATH}";         PATH="${SYSP}/Library/mingw-w64/bin:${PATH}";         PATH="${SYSP}:${PATH}";     else         PATH="${SYSP}/bin:${PATH}";     fi;     \export PATH; }
@@ -25,27 +24,27 @@
    41  print(f"The original price was: ${original_price}"), (f"The current price is: ${current_price}"), (f"The increase price is: ${increase}"), (f"The percent increase is: ${percent_increase}")
    42  conda activate dev
    43  cd "C:\Users\labad\Desktop\FinTech-Workspace\UCB_class\Projects\module2-loan_qualifier_app\loan_qualifier_-app"
-   44  ls
-   45  python app.py 
-   46  python app.py 
+   44  git status
+   45  clear
+   46  ls
    47  python app.py 
    48  python app.py 
    49  python app.py 
-   50  python app.py 
-   51  python app.py 
-   52  clear
-   53  pwd
-   54  git status
-   55  pwd
-   56  ls
-   57  python app.py 
-   58  clear
-   59  python app.py 
-   60  ls
-   61  git status
-   62  git add README.md 
-   63  git add app.py 
-   64  git commit -m "Updated path to qualifying loan"
-   65  git push
-   66  history 50 > terminal_history.txt
-   
+   50  git status
+   51  git add -A
+   52  git status
+   53  git commit -m "Edited README.md"
+   54  git push
+   55  git add -A
+   56  git status
+   57  git commit -m "Added to JPGs to Repo"
+   58  git push
+   59  git status
+   60  git add -A
+   61  git commit -m "Edited README.md"
+   62  git push
+   63  git add -A
+   64  git status
+   65  git commit -m "Edited README.md formatting"
+   66  git push
+   67  history 50 > terminal_history.txt
