@@ -25,16 +25,17 @@ pip install questionary
 
 This application can be used by accessing the clone repository and run the app.py in terminal. 
 
-When asked to "Enter a file path to a rate-sheet (.csv):", enter the following:
+1. When asked to "Enter a file path to a rate-sheet (.csv):", enter the following:
 ```
 ./data/daily_rate_sheet.csv
 ```
-User will answer the eligibility questions. 
-The user will be asked if they would like to save the list. 
-They can enter text to name file, followed by ".csv" to set it as a CSV file. 
+2. User will answer the eligibility questions. 
+3. The user will be asked if they would like to save the list. 
+4. They can enter text to name file, followed by ".csv" to set it as a CSV file. 
 ![Terminal Confirmation](terminal_prompt.jpg) 
 
 CSV file example:
+
 ![CSV Example](qualifyingloans.jpg)
 
 ---
