@@ -15,10 +15,10 @@ This project uses Python 3.7+ with Fire and Questionary.
 ## Installation Guide
 
 Check to ensure that Fire and Questionary are installed on your machine by entering the following into your environment:
-
+```
 pip install fire
 pip install questionary 
-
+```
 ---
 
 ## Usage
