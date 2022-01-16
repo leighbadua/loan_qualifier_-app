@@ -1,3 +1,6 @@
+   17  export CONDA_PYTHON_EXE='C:/Users/labad/anaconda3\python.exe'
+   18  # Copyright (C) 2012 Anaconda, Inc
+   19  # SPDX-License-Identifier: BSD-3-Clause
    20  __add_sys_prefix_to_path() {     if [ -n "${_CE_CONDA}" ] && [ -n "${WINDIR+x}" ]; then         SYSP=$(\dirname "${CONDA_EXE}");     else         SYSP=$(\dirname "${CONDA_EXE}");         SYSP=$(\dirname "${SYSP}");     fi;      if [ -n "${WINDIR+x}" ]; then         PATH="${SYSP}/bin:${PATH}";         PATH="${SYSP}/Scripts:${PATH}";         PATH="${SYSP}/Library/bin:${PATH}";         PATH="${SYSP}/Library/usr/bin:${PATH}";         PATH="${SYSP}/Library/mingw-w64/bin:${PATH}";         PATH="${SYSP}:${PATH}";     else         PATH="${SYSP}/bin:${PATH}";     fi;     \export PATH; }
    21  __conda_exe() (     __add_sys_prefix_to_path;     "$CONDA_EXE" $_CE_M $_CE_CONDA "$@"; )
    22  __conda_hashr() {     if [ -n "${ZSH_VERSION:+x}" ]; then         \rehash;     elif [ -n "${POSH_VERSION:+x}" ]; then         :  # pass;     else         \hash -r;     fi; }
@@ -45,6 +48,4 @@
    64  git commit -m "Updated path to qualifying loan"
    65  git push
    66  history 50 > terminal_history.txt
-   67  python app.py 
-   68  python app.py 
-   69  history 50 > terminal_history.txt
+   
